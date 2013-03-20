@@ -99,4 +99,11 @@
   (message "Pomodoro voided")
   (run-hooks 'pomodoro-void-hook))
 
+;;;###autoload
+(defun pomodoro-start-or-void ()
+  (interactive)
+  (if pomodoro-current-timer
+      (pomodoro-void)
+    (pomodoro-start)))
+
 (provide 'pomodoro)
