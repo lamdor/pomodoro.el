@@ -86,7 +86,7 @@
         (run-at-time (time-add (current-time) (seconds-to-time pomodoro-duration-seconds))
                      nil
                      'pomodoro-finished))
-  (pomodoro-set-display-on-mode-line " Pomodoro")
+  (pomodoro-set-display-on-mode-line " Pomodoro ")
   (message "Pomodoro started")
   (run-hooks 'pomodoro-start-hook))
 
